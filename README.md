@@ -4,7 +4,7 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/thiagobustamante/typescript-ioc/badge.svg?targetFile=package.json)](https://snyk.io/test/github/thiagobustamante/typescript-ioc?targetFile=package.json)
 
 # IoC Container for Typescript - 3.X
-This is a lightweight annotation-based dependency injection container for typescript.
+This is a lightweight annotation-based dependency injection container for typescript.TBD
 
 It can be used on browser, on react native or on node.js server code.
 
