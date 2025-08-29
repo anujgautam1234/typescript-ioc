@@ -3,8 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.PropertyPath = exports.IoCBindValueConfig = exports.IoCBindConfig = void 0;
 const injection_handler_1 = require("./injection-handler");
 const model_1 = require("../model");
-const get = require("lodash.get");
-const set = require("lodash.set");
+const lodash_1 = require("lodash");
 class IoCBindConfig {
     constructor(source, instanceFactory, valueFactory) {
         this.source = source;
@@ -100,7 +99,7 @@ class IoCBindValueConfig {
     to(value) {
         if (this.path) {
             this.value = this.value || {};
-            set(this.value, this.path, value);
+            lodash_1.set(this.value, this.path, value);
         }
         else {
             this.value = value;
@@ -109,7 +108,7 @@ class IoCBindValueConfig {
     }
     getValue() {
         if (this.path) {
-            return get(this.value, this.path);
+            return lodash_1.get(this.value, this.path);
         }
         return this.value;
     }
